@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import SideNav from './components/side-nav/side-nav.component';
+import IconBrowser from './components/icon-browser/icon-browser.component';
+import { connect } from 'react-redux';
+import { Route } from 'react-router-dom';
 
-function App() {
+const App = ({ activeCategory }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='wrapper'>
+      <Route path='/' component={SideNav} />
+      <Route path='/:category?' component={IconBrowser} />
     </div>
   );
-}
+};
 
-export default App;
+const mapStateToProps = ({ activeCategory }) => ({
+  activeCategory: activeCategory,
+});
+
+export default connect(mapStateToProps)(App);

@@ -1,0 +1,30 @@
+@import '../../scss/variables';
+
+.icon {
+  background: $lighter-black;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  outline: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+  &-symbol {
+    font-size: 40px;
+    position: relative;
+    top: -4px;
+  }
+
+  &-flavor {
+    font-size: 12px;
+  }
+
+  &:hover {
+    background: $lightest-black;
+  }
+}
