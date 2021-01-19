@@ -7,7 +7,9 @@ const CategoryTab = ({ id, name, activeCategory, onClick }) => {
   return (
     <Link
       to={`/${id}`}
-      className={`category-tab ${activeCategory === id ? 'active' : ''}`}
+      className={`nav-item category-tab ${
+        activeCategory === id ? 'active' : ''
+      }`}
       onClick={onClick}>
       {name}
     </Link>

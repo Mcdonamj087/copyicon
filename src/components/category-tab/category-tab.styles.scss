@@ -1,19 +1,7 @@
 @import '../../scss/variables';
 
 .category-tab {
-  appearance: none;
-  border: none;
-  font-family: $font-family;
-  font-size: 18px;
-  letter-spacing: 0.01em;
-  color: #fff;
-  padding: 18px 24px;
-  background: transparent;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  outline: none;
-  position: relative;
+  padding: 21px 24px;
   perspective: 1000px;
   display: block;
   text-decoration: none;

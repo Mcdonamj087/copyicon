@@ -1,13 +1,33 @@
+@import '../../scss/variables';
+
 .side-nav {
   width: 284px;
   height: 100vh;
+  position: fixed;
+  font-size: 18px;
 
   .logo {
     padding: 20px 24px;
     box-sizing: content-box;
   }
 
+  .nav-item {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    position: relative;
+  }
+
   .category-nav {
-    padding: 36px 30px;
+    margin: 0 30px;
+    padding: 36px 0 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 }

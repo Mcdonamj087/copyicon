@@ -8,7 +8,9 @@ const App = ({ activeCategory }) => {
   return (
     <div className='wrapper'>
       <Route path='/' component={SideNav} />
-      <Route path='/:category?' component={IconBrowser} />
+      <main className='main-canvas'>
+        <Route path='/:category?' component={IconBrowser} />
+      </main>
     </div>
   );
 };

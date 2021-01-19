@@ -1,0 +1,47 @@
+@import '../../scss/variables';
+
+// The outer container
+.format-selector--wrapper {
+  margin: 0 54px;
+  padding: 24px 0;
+
+  .heading {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  // The selector itself
+  .selector {
+    border: 0;
+    padding: 16px 0 16px 36px;
+
+    .indicator {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    &.active {
+      .indicator {
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background: $primary-gradient-active;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

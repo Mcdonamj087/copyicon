@@ -6,13 +6,13 @@ import { updateActiveCategory } from '../../redux/active-category/active-categor
 
 const IconBrowser = ({ match, symbols, dispatch }) => {
   const category = match.params.category;
+  //console.log(category);
 
   // Update the active category state using category param in url
   // If no category, set active category to null
   dispatch(updateActiveCategory(category || ''));
 
-  console.log(symbols);
-  // The master symbols object is pulled from state
+  // The master symbols object is pulled from redux state
   // The symbols which will display in the icon browser are determined by the category param
   const selectedSymbols = category
     ? symbols.filter(symbol => symbol.id === category)[0].icons
@@ -23,8 +23,8 @@ const IconBrowser = ({ match, symbols, dispatch }) => {
 
   return (
     <div className='icon-browser-container'>
-      {selectedSymbols.map(({ name, formats }) => {
-        return <Icon key={name} format={formats.html} />;
+      {selectedSymbols.map(({ name, formats }, idx) => {
+        return <Icon key={`${name}${idx}`} format={formats.html} />;
       })}
     </div>
   );

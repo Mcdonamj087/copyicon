@@ -1,7 +1,15 @@
+@import './scss/_variables.scss';
+
 body {
+  font-family: $font-family;
   background: #000;
+  color: #fff;
 }
 
 .wrapper {
   display: flex;
+}
+
+.main-canvas {
+  margin-left: 284px;
 }
