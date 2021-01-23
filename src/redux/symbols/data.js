@@ -13,7 +13,7 @@ const symbols = [
         formats: {
           html: '&#8592;',
           entity: '&larr;',
-          css: '\u2190',
+          css: '\\2190',
           hex: 'U+2190',
           ascii: '8592',
         },
@@ -23,7 +23,7 @@ const symbols = [
         formats: {
           html: '&#8593;',
           entity: '&uarr;',
-          css: '\u2191',
+          css: '\\2191',
           hex: 'U+2191',
           ascii: '8593',
         },
@@ -33,7 +33,7 @@ const symbols = [
         formats: {
           html: '&#8594;',
           entity: '&rarr;',
-          css: '\u2192',
+          css: '\\2192',
           hex: 'U+2192',
           ascii: '8594',
         },
@@ -43,7 +43,7 @@ const symbols = [
         formats: {
           html: '&#8596;',
           entity: '&harr;',
-          css: '\u2194',
+          css: '\\2194',
           hex: 'U+2194',
           ascii: '8596',
         },
@@ -52,7 +52,7 @@ const symbols = [
         name: 'Up Down Arrow',
         formats: {
           html: '&#8597;',
-          css: '\u2195',
+          css: '\\2195',
           hex: 'U+2195',
           ascii: '8597',
         },
@@ -68,7 +68,7 @@ const symbols = [
         keywords: [],
         formats: {
           html: '&#8352;',
-          css: '\u20A0',
+          css: '\\20A0',
           hex: 'U+20A0',
           ascii: '8352',
         },
@@ -77,7 +77,7 @@ const symbols = [
         name: 'Colon Sign',
         formats: {
           html: '&#8353',
-          css: '\u20A1',
+          css: '\\20A1',
           hex: 'U+20A1',
           ascii: '8353',
         },
@@ -86,7 +86,7 @@ const symbols = [
         name: 'Cruzeiro Sign',
         formats: {
           html: '&#8354',
-          css: '\u20A2',
+          css: '\\20A2',
           hex: 'U+20A2',
           ascii: '8354',
         },
@@ -95,7 +95,7 @@ const symbols = [
         name: 'French Franc Sign',
         formats: {
           html: '&#8355',
-          css: '\u20A3',
+          css: '\\20A3',
           hex: 'U+20A3',
           ascii: '8355',
         },
@@ -104,7 +104,7 @@ const symbols = [
         name: 'Lira Sign',
         formats: {
           html: '&#8356',
-          css: '\u20A4',
+          css: '\\20A4',
           hex: 'U+20A4',
           ascii: '8356',
         },
@@ -113,7 +113,7 @@ const symbols = [
         name: 'Mill Sign',
         formats: {
           html: '&#8357',
-          css: '\u20A5',
+          css: '\\20A5',
           hex: 'U+20A5',
           ascii: '8357',
         },
@@ -122,7 +122,7 @@ const symbols = [
         name: 'Naira Sign',
         formats: {
           html: '&#8358',
-          css: '\u20A6',
+          css: '\\20A6',
           hex: 'U+20A6',
           ascii: '8358',
         },
@@ -131,7 +131,7 @@ const symbols = [
         name: 'Peseta Sign',
         formats: {
           html: '&#8359',
-          css: '\u20A7',
+          css: '\\20A7',
           hex: 'U+20A7',
           ascii: '8359',
         },
@@ -252,7 +252,7 @@ const symbols = [
         keywords: ['money'],
         formats: {
           html: '&#36;',
-          css: '\u0024',
+          css: '\\0024',
           hex: 'U+0024',
           ascii: '0036',
         },
@@ -262,7 +262,7 @@ const symbols = [
         keywords: ['money'],
         formats: {
           html: '&#36;',
-          css: '\u0024',
+          css: '\\0024',
           hex: 'U+0024',
           ascii: '0036',
         },
@@ -299,7 +299,7 @@ const symbols = [
         formats: {
           html: '&#8704;',
           entity: '&forall;',
-          css: '\u2200',
+          css: '\\2200',
           hex: 'U+2200',
           ascii: '8704',
         },
@@ -309,7 +309,7 @@ const symbols = [
         keywords: [],
         formats: {
           html: '&#8705;',
-          css: '\u2201',
+          css: '\\2201',
           hex: 'U+2201',
           ascii: '8705',
         },
@@ -320,7 +320,7 @@ const symbols = [
         formats: {
           html: '&#8706;',
           entity: '&part;',
-          css: '\u2202',
+          css: '\\2202',
           hex: 'U+2202',
           ascii: '8706',
         },
@@ -331,7 +331,7 @@ const symbols = [
         formats: {
           html: '&#8707;',
           entity: '&exist;',
-          css: '\u2203',
+          css: '\\2203',
           hex: 'U+2203',
           ascii: '8707',
         },
@@ -342,7 +342,7 @@ const symbols = [
         formats: {
           html: '&#8708;',
           entity: '',
-          css: '\u2204',
+          css: '\\2204',
           hex: 'U+2204',
           ascii: '8708',
         },
@@ -353,7 +353,7 @@ const symbols = [
         formats: {
           html: '&#8709;',
           entity: '&empty;',
-          css: '\u2205',
+          css: '\\2205',
           hex: 'U+2205',
           ascii: '8709',
         },
@@ -371,7 +371,7 @@ const symbols = [
         formats: {
           html: '&#8710;',
           entity: '',
-          css: '\u2206',
+          css: '\\2206',
           hex: 'U+2206',
           ascii: '8710',
         },
@@ -387,7 +387,7 @@ const symbols = [
         formats: {
           html: '&#8711;',
           entity: '&nabla;',
-          css: '\u2207',
+          css: '\\2207',
           hex: 'U+2207',
           ascii: '8711',
         },
@@ -398,7 +398,7 @@ const symbols = [
         formats: {
           html: '&#8712;',
           entity: '&isin;',
-          css: '\u2208',
+          css: '\\2208',
           hex: 'U+2208',
           ascii: '8712',
         },
@@ -409,7 +409,7 @@ const symbols = [
         formats: {
           html: '&#8713;',
           entity: '&notin;',
-          css: '\u2209',
+          css: '\\2209',
           hex: 'U+2209',
           ascii: '8713',
         },
@@ -420,7 +420,7 @@ const symbols = [
         formats: {
           html: '&#8714;',
           entity: '',
-          css: '\u220A',
+          css: '\\220A',
           hex: 'U+220A',
           ascii: '8714',
         },
@@ -431,7 +431,7 @@ const symbols = [
         formats: {
           html: '&#8715;',
           entity: '&ni;',
-          css: '\u220B',
+          css: '\\220B',
           hex: 'U+220B',
           ascii: '8715',
         },
@@ -442,7 +442,7 @@ const symbols = [
         formats: {
           html: '&#8716;',
           entity: '',
-          css: '\u220C',
+          css: '\\220C',
           hex: 'U+220C',
           ascii: '8716',
         },
@@ -453,7 +453,7 @@ const symbols = [
         formats: {
           html: '&#8717;',
           entity: '',
-          css: '\u220D',
+          css: '\\220D',
           hex: 'U+220D',
           ascii: '8717',
         },
@@ -464,7 +464,7 @@ const symbols = [
         formats: {
           html: '&#8718;',
           entity: '',
-          css: '\u220E',
+          css: '\\220E',
           hex: 'U+220E',
           ascii: '8718',
         },
@@ -475,7 +475,7 @@ const symbols = [
         formats: {
           html: '&#8719;',
           entity: '&prod;',
-          css: '\u220F',
+          css: '\\220F',
           hex: 'U+220F',
           ascii: '8719',
         },
@@ -486,7 +486,7 @@ const symbols = [
         formats: {
           html: '&#8720;',
           entity: '',
-          css: '\u2210',
+          css: '\\2210',
           hex: 'U+2210',
           ascii: '8720',
         },
@@ -497,7 +497,7 @@ const symbols = [
         formats: {
           html: '&#8721;',
           entity: '&sum;',
-          css: '\u2211',
+          css: '\\2211',
           hex: 'U+2211',
           ascii: '8721',
         },
@@ -508,7 +508,7 @@ const symbols = [
         formats: {
           html: '&#8722;',
           entity: '&minus;',
-          css: '\u2212',
+          css: '\\2212',
           hex: 'U+2212',
           ascii: '8722',
         },
@@ -519,7 +519,7 @@ const symbols = [
         formats: {
           html: '&#8723;',
           entity: '',
-          css: '\u2213',
+          css: '\\2213',
           hex: 'U+2213',
           ascii: '8723',
         },
@@ -530,7 +530,7 @@ const symbols = [
         formats: {
           html: '&#8724;',
           entity: '',
-          css: '\u2214',
+          css: '\\2214',
           hex: 'U+2214',
           ascii: '8724',
         },
@@ -541,7 +541,7 @@ const symbols = [
         formats: {
           html: '&#8725;',
           entity: '',
-          css: '\u2215',
+          css: '\\2215',
           hex: 'U+2215',
           ascii: '8725',
         },
@@ -552,7 +552,7 @@ const symbols = [
         formats: {
           html: '&#8726;',
           entity: '',
-          css: '\u2216',
+          css: '\\2216',
           hex: 'U+2216',
           ascii: '8726',
         },
@@ -563,7 +563,7 @@ const symbols = [
         formats: {
           html: '&#8727;',
           entity: '&lowast;',
-          css: '\u2217',
+          css: '\\2217',
           hex: 'U+2217',
           ascii: '8727',
         },
@@ -574,7 +574,7 @@ const symbols = [
         formats: {
           html: '&#8728;',
           entity: '',
-          css: '\u2218',
+          css: '\\2218',
           hex: 'U+2218',
           ascii: '8728',
         },
@@ -585,7 +585,7 @@ const symbols = [
         formats: {
           html: '&#8729;',
           entity: '',
-          css: '\u2219',
+          css: '\\2219',
           hex: 'U+2219',
           ascii: '8729',
         },
@@ -596,7 +596,7 @@ const symbols = [
         formats: {
           html: '&#8730;',
           entity: '',
-          css: '\u221A',
+          css: '\\221A',
           hex: 'U+221A',
           ascii: '8730',
         },
@@ -607,7 +607,7 @@ const symbols = [
         formats: {
           html: '&#8731;',
           entity: '',
-          css: '\u221B',
+          css: '\\221B',
           hex: 'U+221B',
           ascii: '8731',
         },
@@ -618,7 +618,7 @@ const symbols = [
         formats: {
           html: '&#8732;',
           entity: '',
-          css: '\u221C',
+          css: '\\221C',
           hex: 'U+221C',
           ascii: '8732',
         },
@@ -629,7 +629,7 @@ const symbols = [
         formats: {
           html: '&#8733;',
           entity: '&prop;',
-          css: '\u221D',
+          css: '\\221D',
           hex: 'U+221D',
           ascii: '8733',
         },
@@ -640,7 +640,7 @@ const symbols = [
         formats: {
           html: '&#8734;',
           entity: '&infin;',
-          css: '\u221E',
+          css: '\\221E',
           hex: 'U+221E',
           ascii: '8734',
         },
@@ -651,7 +651,7 @@ const symbols = [
         formats: {
           html: '&#8735;',
           entity: '',
-          css: '\u221F',
+          css: '\\221F',
           hex: 'U+221F',
           ascii: '8735',
         },
@@ -662,7 +662,7 @@ const symbols = [
         formats: {
           html: '&#8736;',
           entity: '&ang;',
-          css: '\u2220',
+          css: '\\2220',
           hex: 'U+2220',
           ascii: '8736',
         },
@@ -673,7 +673,7 @@ const symbols = [
         formats: {
           html: '&#8737;',
           entity: '',
-          css: '\u2221',
+          css: '\\2221',
           hex: 'U+2221',
           ascii: '8737',
         },
@@ -684,7 +684,7 @@ const symbols = [
         formats: {
           html: '&#8738;',
           entity: '',
-          css: '\u2222',
+          css: '\\2222',
           hex: 'U+2222',
           ascii: '8738',
         },
@@ -695,7 +695,7 @@ const symbols = [
         formats: {
           html: '&#8739;',
           entity: '',
-          css: '\u2223',
+          css: '\\2223',
           hex: 'U+2223',
           ascii: '8739',
         },
@@ -706,7 +706,7 @@ const symbols = [
         formats: {
           html: '&#8740;',
           entity: '',
-          css: '\u2224',
+          css: '\\2224',
           hex: 'U+2224',
           ascii: '8740',
         },
@@ -717,7 +717,7 @@ const symbols = [
         formats: {
           html: '&#8741;',
           entity: '',
-          css: '\u2225',
+          css: '\\2225',
           hex: 'U+2225',
           ascii: '8741',
         },
@@ -728,7 +728,7 @@ const symbols = [
         formats: {
           html: '&#8742;',
           entity: '',
-          css: '\u2226',
+          css: '\\2226',
           hex: 'U+2226',
           ascii: '8742',
         },
@@ -739,7 +739,7 @@ const symbols = [
         formats: {
           html: '&#8743;',
           entity: '&and;',
-          css: '\u2227',
+          css: '\\2227',
           hex: 'U+2227',
           ascii: '8743',
         },
@@ -750,7 +750,7 @@ const symbols = [
         formats: {
           html: '&#8744;',
           entity: '&or;',
-          css: '\u2228',
+          css: '\\2228',
           hex: 'U+2228',
           ascii: '8744',
         },
@@ -761,7 +761,7 @@ const symbols = [
         formats: {
           html: '&#8745;',
           entity: '&cap;',
-          css: '\u2229',
+          css: '\\2229',
           hex: 'U+2229',
           ascii: '8745',
         },
@@ -772,7 +772,7 @@ const symbols = [
         formats: {
           html: '&#8746;',
           entity: '&cup;',
-          css: '\u222A',
+          css: '\\222A',
           hex: 'U+222A',
           ascii: '8746',
         },
@@ -783,7 +783,7 @@ const symbols = [
         formats: {
           html: '&#8747;',
           entity: '&int;',
-          css: '\u222B',
+          css: '\\222B',
           hex: 'U+222B',
           ascii: '8747',
         },
@@ -794,7 +794,7 @@ const symbols = [
         formats: {
           html: '&#8748;',
           entity: '',
-          css: '\u222C',
+          css: '\\222C',
           hex: 'U+222C',
           ascii: '8748',
         },
@@ -805,7 +805,7 @@ const symbols = [
         formats: {
           html: '&#8749;',
           entity: '',
-          css: '\u222D',
+          css: '\\222D',
           hex: 'U+222D',
           ascii: '8749',
         },
@@ -816,7 +816,7 @@ const symbols = [
         formats: {
           html: '&#8750;',
           entity: '',
-          css: '\u222E',
+          css: '\\222E',
           hex: 'U+222E',
           ascii: '8750',
         },
@@ -827,7 +827,7 @@ const symbols = [
         formats: {
           html: '&#8751;',
           entity: '',
-          css: '\u222F',
+          css: '\\222F',
           hex: 'U+222F',
           ascii: '8751',
         },
@@ -838,7 +838,7 @@ const symbols = [
         formats: {
           html: '&#8752;',
           entity: '',
-          css: '\u2230',
+          css: '\\2230',
           hex: 'U+2230',
           ascii: '8752',
         },
@@ -849,7 +849,7 @@ const symbols = [
         formats: {
           html: '&#8753;',
           entity: '',
-          css: '\u2231',
+          css: '\\2231',
           hex: 'U+2231',
           ascii: '8753',
         },
@@ -860,7 +860,7 @@ const symbols = [
         formats: {
           html: '&#8754;',
           entity: '',
-          css: '\u2232',
+          css: '\\2232',
           hex: 'U+2232',
           ascii: '8754',
         },
@@ -871,7 +871,7 @@ const symbols = [
         formats: {
           html: '&#8755;',
           entity: '',
-          css: '\u2233',
+          css: '\\2233',
           hex: 'U+2233',
           ascii: '8755',
         },
@@ -882,7 +882,7 @@ const symbols = [
         formats: {
           html: '&#8756;',
           entity: '&there4;',
-          css: '\u2234',
+          css: '\\2234',
           hex: 'U+2234',
           ascii: '8756',
         },
@@ -893,7 +893,7 @@ const symbols = [
         formats: {
           html: '&#8757;',
           entity: '',
-          css: '\u2235',
+          css: '\\2235',
           hex: 'U+2235',
           ascii: '8757',
         },
@@ -904,7 +904,7 @@ const symbols = [
         formats: {
           html: '&#8758;',
           entity: '',
-          css: '\u2236',
+          css: '\\2236',
           hex: 'U+2236',
           ascii: '8758',
         },
@@ -915,7 +915,7 @@ const symbols = [
         formats: {
           html: '&#8759;',
           entity: '',
-          css: '\u2237',
+          css: '\\2237',
           hex: 'U+2237',
           ascii: '8759',
         },
@@ -926,7 +926,7 @@ const symbols = [
         formats: {
           html: '&#8760;',
           entity: '',
-          css: '\u2238',
+          css: '\\2238',
           hex: 'U+2238',
           ascii: '8760',
         },
@@ -937,7 +937,7 @@ const symbols = [
         formats: {
           html: '&#8761;',
           entity: '',
-          css: '\u2239',
+          css: '\\2239',
           hex: 'U+2239',
           ascii: '8761',
         },
@@ -948,7 +948,7 @@ const symbols = [
         formats: {
           html: '&#8762;',
           entity: '',
-          css: '\u223A',
+          css: '\\223A',
           hex: 'U+223A',
           ascii: '8762',
         },
@@ -959,7 +959,7 @@ const symbols = [
         formats: {
           html: '&#8763;',
           entity: '',
-          css: '\u223B',
+          css: '\\223B',
           hex: 'U+223B',
           ascii: '8763',
         },
@@ -977,7 +977,7 @@ const symbols = [
         formats: {
           html: '&#8764;',
           entity: '&sim;',
-          css: '\u223C',
+          css: '\\223C',
           hex: 'U+223C',
           ascii: '8764',
         },
@@ -988,7 +988,7 @@ const symbols = [
         formats: {
           html: '&#8765;',
           entity: '',
-          css: '\u223D',
+          css: '\\223D',
           hex: 'U+223D',
           ascii: '8765',
         },
@@ -999,7 +999,7 @@ const symbols = [
         formats: {
           html: '&#8766;',
           entity: '',
-          css: '\u223E',
+          css: '\\223E',
           hex: 'U+223E',
           ascii: '8766',
         },
@@ -1010,7 +1010,7 @@ const symbols = [
         formats: {
           html: '&#8767;',
           entity: '',
-          css: '\u223F',
+          css: '\\223F',
           hex: 'U+223F',
           ascii: '8767',
         },
@@ -1021,7 +1021,7 @@ const symbols = [
         formats: {
           html: '&#8768;',
           entity: '',
-          css: '\u2240',
+          css: '\\2240',
           hex: 'U+2240',
           ascii: '8768',
         },
@@ -1032,7 +1032,7 @@ const symbols = [
         formats: {
           html: '&#8769;',
           entity: '',
-          css: '\u2241',
+          css: '\\2241',
           hex: 'U+2241',
           ascii: '8769',
         },
@@ -1043,7 +1043,7 @@ const symbols = [
         formats: {
           html: '&#8770;',
           entity: '',
-          css: '\u2242',
+          css: '\\2242',
           hex: 'U+2242',
           ascii: '8770',
         },
@@ -1054,7 +1054,7 @@ const symbols = [
         formats: {
           html: '&#8771;',
           entity: '',
-          css: '\u2243',
+          css: '\\2243',
           hex: 'U+2243',
           ascii: '8771',
         },
@@ -1065,7 +1065,7 @@ const symbols = [
         formats: {
           html: '&#8772;',
           entity: '',
-          css: '\u2244',
+          css: '\\2244',
           hex: 'U+2244',
           ascii: '8772',
         },
@@ -1076,7 +1076,7 @@ const symbols = [
         formats: {
           html: '&#8773;',
           entity: '',
-          css: '\u2245',
+          css: '\\2245',
           hex: 'U+2245',
           ascii: '8773',
         },
@@ -1087,7 +1087,7 @@ const symbols = [
         formats: {
           html: '&#8774;',
           entity: '',
-          css: '\u2246',
+          css: '\\2246',
           hex: 'U+2246',
           ascii: '8774',
         },
@@ -1098,7 +1098,7 @@ const symbols = [
         formats: {
           html: '&#8775;',
           entity: '',
-          css: '\u2247',
+          css: '\\2247',
           hex: 'U+2247',
           ascii: '8775',
         },
@@ -1109,7 +1109,7 @@ const symbols = [
         formats: {
           html: '&#8775;',
           entity: '',
-          css: '\u2247',
+          css: '\\2247',
           hex: 'U+2247',
           ascii: '8775',
         },
@@ -1128,17 +1128,17 @@ const symbols = [
       {
         name: 'Exclamation Mark',
         keywords: ['point'],
-        formats: { html: '&#33;', css: '\u0021', hex: 'U+0021', ascii: '0033' },
+        formats: { html: '&#33;', css: '\\0021', hex: 'U+0021', ascii: '0033' },
       },
       {
         name: 'Quotation Mark',
         keywords: [],
-        formats: { html: '&#34;', css: '\u0022', hex: 'U+0022', ascii: '0034' },
+        formats: { html: '&#34;', css: '\\0022', hex: 'U+0022', ascii: '0034' },
       },
       {
         name: 'Number Sign',
         keywords: ['hash', 'pound'],
-        formats: { html: '&#35;', css: '\u0023', hex: 'U+0023', ascii: '0035' },
+        formats: { html: '&#35;', css: '\\0023', hex: 'U+0023', ascii: '0035' },
       },
     ],
   },

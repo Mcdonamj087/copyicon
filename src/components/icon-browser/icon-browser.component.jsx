@@ -4,7 +4,7 @@ import Icon from '../icon/icon.component';
 import { connect } from 'react-redux';
 import { updateActiveCategory } from '../../redux/active-category/active-category.actions';
 
-const IconBrowser = ({ match, symbols, dispatch }) => {
+const IconBrowser = ({ match, symbols, activeFormat, dispatch }) => {
   const category = match.params.category;
   //console.log(category);
 
@@ -24,14 +24,27 @@ const IconBrowser = ({ match, symbols, dispatch }) => {
   return (
     <div className='icon-browser-container'>
       {selectedSymbols.map(({ name, formats }, idx) => {
-        return <Icon key={`${name}${idx}`} format={formats.html} />;
+        const htmlFormat = formats.entity ? formats.entity : formats.html;
+        console.log(htmlFormat);
+        return (
+          <Icon
+            key={`${name}${idx}`}
+            htmlCode={formats.html}
+            format={
+              activeFormat === 'html'
+                ? htmlFormat
+                : formats[activeFormat.toLowerCase()]
+            }
+          />
+        );
       })}
     </div>
   );
 };
 
-const mapStateToProps = ({ symbols }) => ({
+const mapStateToProps = ({ symbols, activeFormat }) => ({
   symbols,
+  activeFormat,
 });
 
 export default connect(mapStateToProps)(IconBrowser);

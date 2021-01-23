@@ -10,7 +10,7 @@ const Icon = props => {
 
   return (
     <button className='icon'>
-      <div className='icon-symbol'>{decodeHtml(props.format)}</div>
+      <div className='icon-symbol'>{decodeHtml(props.htmlCode)}</div>
       <div className='icon-flavor'>{props.format}</div>
     </button>
   );
