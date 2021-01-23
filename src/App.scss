@@ -4,6 +4,7 @@ body {
   font-family: $font-family;
   background: #000;
   color: #fff;
+  font-size: 18px;
 }
 
 .wrapper {
@@ -12,4 +13,5 @@ body {
 
 .main-canvas {
   margin-left: 284px;
+  padding-right: 20px;
 }

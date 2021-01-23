@@ -24,8 +24,8 @@ const IconBrowser = ({ match, symbols, activeFormat, dispatch }) => {
   return (
     <div className='icon-browser-container'>
       {selectedSymbols.map(({ name, formats }, idx) => {
+        // Gets the entity (if one exists), else keeps the html format
         const htmlFormat = formats.entity ? formats.entity : formats.html;
-        console.log(htmlFormat);
         return (
           <Icon
             key={`${name}${idx}`}

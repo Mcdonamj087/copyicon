@@ -1,0 +1,15 @@
+@import '../../scss/variables';
+
+header {
+  height: 103px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 284px;
+  right: 0;
+  z-index: 100;
+  background: $black;
+  padding-right: 60px;
+}

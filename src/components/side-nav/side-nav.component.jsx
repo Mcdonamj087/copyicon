@@ -10,7 +10,7 @@ const SideNav = ({ symbols }) => {
   return (
     <div className='side-nav'>
       <div>
-        <Link to='/'>
+        <Link to='/' className='logo-link'>
           <Logo className='logo' />
         </Link>
 

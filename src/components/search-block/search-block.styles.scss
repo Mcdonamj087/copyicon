@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.search-block {
+  width: 100%;
+  max-width: 430px;
+
+  .search-input {
+    appearance: none;
+    border: none;
+    background: transparent;
+    box-shadow: inset 0 -1px 0 0 rgba(#fff, 0.5);
+    font-family: $font-family;
+    line-height: 47px;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+
+    &::placeholder {
+      opacity: 0.3;
+      color: #fff;
+    }
+  }
+}
