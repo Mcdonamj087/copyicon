@@ -1,3 +1,18 @@
+@import '../../scss/variables';
+
 .icon-browser-container {
-  padding-top: 103px;
+  margin-top: 103px;
+  height: calc(100vh - 130px);
+  width: 100%;
+  position: relative;
+
+  .nada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $lightest-black;
+    padding: 20px;
+    border-radius: 7px;
+  }
 }

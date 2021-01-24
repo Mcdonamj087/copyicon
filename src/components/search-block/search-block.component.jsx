@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import { updateSearchValue } from '../../redux/search-value/search-value.actions';
 import './search-block.styles.scss';
 
-const Search = ({ history }) => {
-  const [value, updateValue] = useState('');
-
-  console.log(history);
-
+const Search = ({ history, dispatch }) => {
   function handleChange(e) {
-    updateValue(e.target.value);
-    history.push('/');
+    dispatch(updateSearchValue(e.target.value));
+    // history.push('/');
   }
 
   return (
@@ -24,4 +22,4 @@ const Search = ({ history }) => {
   );
 };
 
-export default withRouter(Search);
+export default withRouter(connect()(Search));
