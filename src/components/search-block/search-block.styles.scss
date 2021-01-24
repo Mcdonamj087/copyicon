@@ -3,6 +3,7 @@
 .search-block {
   width: 100%;
   max-width: 430px;
+  position: relative;
 
   .search-input {
     appearance: none;
@@ -20,5 +21,18 @@
       opacity: 0.3;
       color: #fff;
     }
+  }
+
+  .search-reset {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
   }
 }

@@ -43,7 +43,7 @@ const IconBrowser = ({
 
     let matchesAny = false;
     termsToSearch.forEach(term => {
-      if (term.includes(searchValue)) {
+      if (term.includes(searchValue.toLowerCase())) {
         matchesAny = true;
       }
     });
