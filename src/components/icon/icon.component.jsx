@@ -1,4 +1,5 @@
-import React, { dangerouslySetInnerHtml } from 'react';
+import React, { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './icon.styles.scss';
 
 const Icon = props => {
@@ -8,11 +9,24 @@ const Icon = props => {
     return txt.value;
   };
 
+  const [isCopied, setCopied] = useState(false);
+
+  function handleCopy() {
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  }
+
   return (
-    <button className='icon'>
-      <div className='icon-symbol'>{decodeHtml(props.htmlCode)}</div>
-      <div className='icon-flavor'>{props.format}</div>
-    </button>
+    <CopyToClipboard text={props.format} onCopy={() => handleCopy()}>
+      <button className={`icon ${isCopied ? 'copied' : ''}`}>
+        <div className='icon-symbol'>
+          {isCopied ? '👍' : decodeHtml(props.htmlCode)}
+        </div>
+        <div className='icon-flavor'>{isCopied ? 'copied!' : props.format}</div>
+      </button>
+    </CopyToClipboard>
   );
 };
 
