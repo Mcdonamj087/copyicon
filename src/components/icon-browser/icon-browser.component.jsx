@@ -3,6 +3,9 @@ import './icon-browser.styles.scss';
 import Icon from '../icon/icon.component';
 import { connect } from 'react-redux';
 import { updateActiveCategory } from '../../redux/active-category/active-category.actions';
+import { ReactComponent as Astronaut } from '../../assets/astronaut.svg';
+import { ReactComponent as Starscape } from '../../assets/star-scape.svg';
+import { ReactComponent as StarX } from '../../assets/star-x.svg';
 
 const IconBrowser = ({
   match,
@@ -38,6 +41,7 @@ const IconBrowser = ({
         if (curr[0] === 'formats') {
           return acc.concat(Object.values(curr[1]));
         }
+        return false;
       }, [])
       .map(term => term.toLowerCase());
 
@@ -75,7 +79,11 @@ const IconBrowser = ({
             );
           })
         ) : (
-          <div className='nada'>No matches found</div>
+          <div className='nada'>
+            <Starscape className='starscape' />
+            <Astronaut className='astronaut' />
+            <p className='message'>No matches found...</p>
+          </div>
         )
       }
     </div>
