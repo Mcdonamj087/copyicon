@@ -34,7 +34,11 @@ const Icon = props => {
       <button className={`icon ${isCopied ? 'copied' : ''}`}>
         <div className='icon-symbol'>
           {isCopied ? (
-            <Lottie options={lottieOptions} height={40} width={60} />
+            <Lottie
+              options={lottieOptions}
+              height={props.isSaveList ? 25 : 40}
+              width={60}
+            />
           ) : (
             decodeHtml(props.htmlCode)
           )}
@@ -44,6 +48,10 @@ const Icon = props => {
       </button>
     </CopyToClipboard>
   );
+};
+
+Icon.defaultProps = {
+  isSaveList: false,
 };
 
 export default connect()(Icon);

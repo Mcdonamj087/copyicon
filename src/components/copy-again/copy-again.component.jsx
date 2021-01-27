@@ -11,7 +11,12 @@ const CopyAgain = ({ savedIcons }) => {
       <div className='copy-again-list'>
         {savedIcons.length > 0 &&
           savedIcons.map((icon, idx) => (
-            <Icon key={idx} format={icon.format} htmlCode={icon.htmlCode} />
+            <Icon
+              key={idx}
+              format={icon.format}
+              htmlCode={icon.htmlCode}
+              isSaveList={true}
+            />
           ))}
       </div>
     </div>
