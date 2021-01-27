@@ -16,6 +16,7 @@ const Search = ({ history, dispatch, searchValue }) => {
 
   // Function to handle search input change
   function handleChange(e) {
+    history.push('/');
     dispatch(updateSearchValue(e.target.value));
   }
 

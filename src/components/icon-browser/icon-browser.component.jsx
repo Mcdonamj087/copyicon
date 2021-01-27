@@ -55,8 +55,6 @@ const IconBrowser = ({
     return matchesAny;
   });
 
-  console.log(searchFilteredSymbols);
-
   return (
     <div className='icon-browser-container'>
       {
