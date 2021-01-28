@@ -66,6 +66,7 @@ const IconBrowser = ({
             const htmlFormat = formats.entity ? formats.entity : formats.html;
             return (
               <Icon
+                // TODO: create unique IDs for keys
                 key={`${name}${idx}`}
                 htmlCode={formats.html}
                 format={
