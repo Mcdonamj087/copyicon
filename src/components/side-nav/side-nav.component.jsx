@@ -25,9 +25,11 @@ const SideNav = ({ symbols }) => {
 
         <div className='format-selector--wrapper'>
           <p className='heading'>Choose a flavor:</p>
+          <FormatSelector format='Raw' />
           <FormatSelector format='HTML' />
           <FormatSelector format='CSS' />
           <FormatSelector format='Hex' />
+          <FormatSelector format='ASCII' />
         </div>
       </div>
 

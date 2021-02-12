@@ -1,4 +1,4 @@
-const INITIAL_STATE = 'html';
+const INITIAL_STATE = 'Raw';
 
 const activeFormatReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {

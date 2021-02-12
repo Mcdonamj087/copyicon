@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/copyIconAnimation.json';
@@ -6,7 +6,9 @@ import { updateSavedIconsList } from '../../redux/saved-icons/saved-icons.action
 import { connect } from 'react-redux';
 import './icon.styles.scss';
 
-const Icon = props => {
+const Icon = React.memo(props => {
+  const { activeFormat, dispatch, format, isSaveList, htmlCode } = props;
+
   const decodeHtml = html => {
     var txt = document.createElement('textarea');
     txt.innerHTML = html;
@@ -21,37 +23,53 @@ const Icon = props => {
     animationData: animationData,
   };
 
-  function handleCopy(iconObject) {
-    setCopied(true);
-    props.dispatch(updateSavedIconsList(iconObject));
-    setTimeout(() => {
+  useEffect(() => {
+    console.log('component mounted');
+    const timeout = setTimeout(() => {
       setCopied(false);
     }, 2000);
+    return () => {
+      clearTimeout(timeout);
+    };
+  });
+
+  function handleCopy(iconObject) {
+    setCopied(true);
+    dispatch(updateSavedIconsList(iconObject));
   }
 
   return (
-    <CopyToClipboard text={props.format} onCopy={() => handleCopy(props)}>
-      <button className={`icon ${isCopied ? 'copied' : ''}`}>
+    <CopyToClipboard text={format} onCopy={() => handleCopy(props)}>
+      <button
+        className={`icon ${isCopied ? 'copied' : ''} ${
+          activeFormat.toLowerCase() === 'raw' && !isSaveList
+            ? 'format__raw'
+            : ''
+        }`}>
         <div className='icon-symbol'>
           {isCopied ? (
             <Lottie
               options={lottieOptions}
-              height={props.isSaveList ? 25 : 40}
+              height={isSaveList ? 25 : 40}
               width={60}
             />
           ) : (
-            decodeHtml(props.htmlCode)
+            decodeHtml(htmlCode)
           )}
         </div>
 
-        <div className='icon-flavor'>{isCopied ? 'copied!' : props.format}</div>
+        <div className='icon-flavor'>{isCopied ? 'copied!' : format}</div>
       </button>
     </CopyToClipboard>
   );
-};
+});
 
 Icon.defaultProps = {
   isSaveList: false,
 };
 
-export default connect()(Icon);
+const mapStateToProps = ({ activeFormat }) => ({
+  activeFormat,
+});
+
+export default connect(mapStateToProps)(Icon);

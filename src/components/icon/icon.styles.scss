@@ -38,6 +38,16 @@
     animation: copy-animation 1.4s ease-in-out;
   }
 
+  &.format__raw {
+    .icon-symbol {
+      top: 28px;
+    }
+
+    .icon-flavor {
+      display: none;
+    }
+  }
+
   &-symbol {
     font-size: 40px;
     line-height: 1;

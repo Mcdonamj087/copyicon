@@ -16,6 +16,7 @@ const CopyAgain = ({ savedIcons }) => {
               format={icon.format}
               htmlCode={icon.htmlCode}
               isSaveList={true}
+              className='copy-again'
             />
           ))}
       </div>

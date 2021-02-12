@@ -4,9 +4,13 @@
 
   span {
     margin-right: 16px;
+    flex-shrink: 0;
   }
 
   &-list {
+    height: 40px;
+    overflow: hidden;
+
     .icon {
       flex: 1 auto;
       width: 40px;
