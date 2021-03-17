@@ -6,7 +6,7 @@ import { updateSavedIconsList } from '../../redux/saved-icons/saved-icons.action
 import { connect } from 'react-redux';
 import './icon.styles.scss';
 
-const Icon = React.memo(props => {
+const Icon = props => {
   const { activeFormat, dispatch, format, isSaveList, htmlCode } = props;
 
   const decodeHtml = html => {
@@ -24,7 +24,6 @@ const Icon = React.memo(props => {
   };
 
   useEffect(() => {
-    console.log('component mounted');
     const timeout = setTimeout(() => {
       setCopied(false);
     }, 2000);
@@ -62,7 +61,7 @@ const Icon = React.memo(props => {
       </button>
     </CopyToClipboard>
   );
-});
+};
 
 Icon.defaultProps = {
   isSaveList: false,

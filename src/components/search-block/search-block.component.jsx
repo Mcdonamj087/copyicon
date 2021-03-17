@@ -7,8 +7,6 @@ import './search-block.styles.scss';
 const Search = ({ history, dispatch, searchValue }) => {
   const input = useRef(null);
 
-  console.log(input);
-
   function handleReset() {
     input.current.value = '';
     dispatch(updateSearchValue(''));

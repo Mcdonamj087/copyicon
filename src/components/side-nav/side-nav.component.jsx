@@ -16,11 +16,9 @@ const SideNav = ({ symbols }) => {
 
         <div className='category-nav'>
           <CategoryTab name='All' id='' />
-          {symbols
-            .filter(({ icons }) => icons.length)
-            .map(({ id, category }, idx) => (
-              <CategoryTab key={id} id={id} name={category} />
-            ))}
+          {symbols.map(({ id, category }, idx) => (
+            <CategoryTab key={id} id={id} name={category} />
+          ))}
         </div>
 
         <div className='format-selector--wrapper'>
@@ -39,7 +37,7 @@ const SideNav = ({ symbols }) => {
 };
 
 const mapStateToProps = ({ symbols }) => ({
-  symbols: symbols,
+  symbols: symbols.filter(({ icons }) => icons.length),
 });
 
 export default connect(mapStateToProps)(SideNav);

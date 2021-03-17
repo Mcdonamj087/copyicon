@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import { updateActiveCategory } from '../../redux/active-category/active-category.actions';
 import { ReactComponent as Astronaut } from '../../assets/astronaut.svg';
 import { ReactComponent as Starscape } from '../../assets/star-scape.svg';
-import { ReactComponent as StarX } from '../../assets/star-x.svg';
 
 const IconBrowser = ({
   match,

@@ -2,10 +2,9 @@ import './App.scss';
 import SideNav from './components/side-nav/side-nav.component';
 import Header from './components/header/header.component';
 import IconBrowser from './components/icon-browser/icon-browser.component';
-import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 
-const App = ({ activeCategory }) => {
+const App = () => {
   return (
     <div className='wrapper'>
       <Route path='/' component={SideNav} />
@@ -17,8 +16,4 @@ const App = ({ activeCategory }) => {
   );
 };
 
-const mapStateToProps = ({ activeCategory }) => ({
-  activeCategory: activeCategory,
-});
-
-export default connect(mapStateToProps)(App);
+export default App;
