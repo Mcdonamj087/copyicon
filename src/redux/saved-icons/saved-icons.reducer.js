@@ -16,7 +16,7 @@ const savedIconsReducer = (state = INITIAL_STATE, action) => {
 
       console.log(newState);
 
-      if (newState.length == maxSavedIcons + 1) {
+      if (newState.length === maxSavedIcons + 1) {
         return newState.slice(0, newState.length - 1);
       } else {
         return newState;
